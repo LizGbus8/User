@@ -22,7 +22,9 @@ public class UserDaoImpl implements UserDao {
 		// TODO Auto-generated constructor stub
 	}
 
-	private ArrayList<User> list = new ArrayList<User>();
+	//private 不让别人访问
+	//static 让所有对象共用成员变量
+	private static ArrayList<User> list = new ArrayList<User>();
 	@Override
 	public boolean isLogin(String name, String password) {
 		boolean flag = false;
